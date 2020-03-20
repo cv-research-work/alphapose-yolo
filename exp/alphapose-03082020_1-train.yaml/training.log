@@ -1,0 +1,407 @@
+******************************
+Namespace(board=True, cfg='configs/elephant/train.yaml', debug=False, detector='yolo', device=device(type='cuda', index=0), dist_backend='nccl', dist_url='tcp://192.168.1.214:23345', exp_id='alphapose-03082020_1', gpus=[0], launcher='none', map=True, nThreads=60, rank=-1, snapshot=2, sync=False, work_dir='./exp/alphapose-03082020_1-train.yaml/', world_size=4)
+******************************
+{'DATASET': {'TRAIN': {'TYPE': 'Elephant', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'ANN': 'train', 'AUG': {'FLIP': False, 'ROT_FACTOR': 40, 'SCALE_FACTOR': 0.3, 'NUM_JOINTS_HALF_BODY': 8, 'PROB_HALF_BODY': -1}}, 'VAL': {'TYPE': 'Elephant', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'test_images', 'ANN': 'test'}, 'TEST': {'TYPE': 'Elephant', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'test_images', 'DET_FILE': './exp/json/test_det_yolo.json', 'ANN': 'test'}}, 'DATA_PRESET': {'TYPE': 'simple', 'SIGMA': 2, 'NUM_JOINTS': 20, 'IMAGE_SIZE': [256, 192], 'HEATMAP_SIZE': [64, 48]}, 'MODEL': {'TYPE': 'FastPose', 'PRETRAINED': '', 'TRY_LOAD': '', 'NUM_DECONV_FILTERS': [256, 256, 256], 'NUM_LAYERS': 50}, 'DETECTOR': {'NAME': 'yolo', 'CONFIG': 'detector/yolo/cfg/yolov3-spp.cfg', 'WEIGHTS': 'detector/yolo/data/yolov3-spp.weights', 'NMS_THRES': 0.6, 'CONFIDENCE': 0.05}, 'TRAIN': {'WORLD_SIZE': 4, 'BATCH_SIZE': 32, 'BEGIN_EPOCH': 0, 'END_EPOCH': 200, 'OPTIMIZER': 'adam', 'LR': 0.001, 'LR_FACTOR': 0.1, 'LR_STEP': [90, 120], 'DPG_MILESTONE': 140, 'DPG_STEP': [20, 50]}, 'FILE_NAME': 'train.yaml'}
+******************************
+Create new model
+=> init weights
+############# Starting Epoch 0 | LR: 0.001 #############
+Train-0 epoch | loss:0.00176329 | acc:0.0037
+############# Starting Epoch 1 | LR: 0.001 #############
+Train-1 epoch | loss:0.00100939 | acc:0.0131
+############# Starting Epoch 2 | LR: 0.001 #############
+Train-2 epoch | loss:0.00100203 | acc:0.0205
+############# Starting Epoch 3 | LR: 0.001 #############
+Train-3 epoch | loss:0.00099106 | acc:0.0249
+############# Starting Epoch 4 | LR: 0.001 #############
+Train-4 epoch | loss:0.00098123 | acc:0.0349
+############# Starting Epoch 5 | LR: 0.001 #############
+Train-5 epoch | loss:0.00096791 | acc:0.0502
+############# Starting Epoch 6 | LR: 0.001 #############
+Train-6 epoch | loss:0.00095530 | acc:0.0620
+############# Starting Epoch 7 | LR: 0.001 #############
+Train-7 epoch | loss:0.00094033 | acc:0.0862
+############# Starting Epoch 8 | LR: 0.001 #############
+Train-8 epoch | loss:0.00092031 | acc:0.1174
+############# Starting Epoch 9 | LR: 0.001 #############
+Train-9 epoch | loss:0.00090018 | acc:0.1511
+############# Starting Epoch 10 | LR: 0.001 #############
+Train-10 epoch | loss:0.00086922 | acc:0.1976
+############# Starting Epoch 11 | LR: 0.001 #############
+Train-11 epoch | loss:0.00084246 | acc:0.2236
+############# Starting Epoch 12 | LR: 0.001 #############
+Train-12 epoch | loss:0.00081782 | acc:0.2690
+############# Starting Epoch 13 | LR: 0.001 #############
+Train-13 epoch | loss:0.00076946 | acc:0.3238
+############# Starting Epoch 14 | LR: 0.001 #############
+Train-14 epoch | loss:0.00073413 | acc:0.3675
+############# Starting Epoch 15 | LR: 0.001 #############
+Train-15 epoch | loss:0.00069654 | acc:0.4151
+############# Starting Epoch 16 | LR: 0.001 #############
+Train-16 epoch | loss:0.00067001 | acc:0.4398
+############# Starting Epoch 17 | LR: 0.001 #############
+Train-17 epoch | loss:0.00064466 | acc:0.4732
+############# Starting Epoch 18 | LR: 0.001 #############
+Train-18 epoch | loss:0.00061641 | acc:0.4972
+############# Starting Epoch 19 | LR: 0.001 #############
+Train-19 epoch | loss:0.00060020 | acc:0.5259
+############# Starting Epoch 20 | LR: 0.001 #############
+Train-20 epoch | loss:0.00058421 | acc:0.5388
+############# Starting Epoch 21 | LR: 0.001 #############
+Train-21 epoch | loss:0.00056391 | acc:0.5621
+############# Starting Epoch 22 | LR: 0.001 #############
+Train-22 epoch | loss:0.00055639 | acc:0.5662
+############# Starting Epoch 23 | LR: 0.001 #############
+Train-23 epoch | loss:0.00054316 | acc:0.5756
+############# Starting Epoch 24 | LR: 0.001 #############
+Train-24 epoch | loss:0.00053444 | acc:0.5835
+############# Starting Epoch 25 | LR: 0.001 #############
+Train-25 epoch | loss:0.00052403 | acc:0.5975
+############# Starting Epoch 26 | LR: 0.001 #############
+Train-26 epoch | loss:0.00051281 | acc:0.6090
+############# Starting Epoch 27 | LR: 0.001 #############
+Train-27 epoch | loss:0.00050966 | acc:0.6136
+############# Starting Epoch 28 | LR: 0.001 #############
+Train-28 epoch | loss:0.00050528 | acc:0.6111
+############# Starting Epoch 29 | LR: 0.001 #############
+Train-29 epoch | loss:0.00048939 | acc:0.6323
+############# Starting Epoch 30 | LR: 0.001 #############
+Train-30 epoch | loss:0.00048397 | acc:0.6422
+############# Starting Epoch 31 | LR: 0.001 #############
+Train-31 epoch | loss:0.00047252 | acc:0.6470
+############# Starting Epoch 32 | LR: 0.001 #############
+Train-32 epoch | loss:0.00046778 | acc:0.6553
+############# Starting Epoch 33 | LR: 0.001 #############
+Train-33 epoch | loss:0.00046748 | acc:0.6611
+############# Starting Epoch 34 | LR: 0.001 #############
+Train-34 epoch | loss:0.00045901 | acc:0.6632
+############# Starting Epoch 35 | LR: 0.001 #############
+Train-35 epoch | loss:0.00045791 | acc:0.6693
+############# Starting Epoch 36 | LR: 0.001 #############
+Train-36 epoch | loss:0.00044984 | acc:0.6747
+############# Starting Epoch 37 | LR: 0.001 #############
+Train-37 epoch | loss:0.00043933 | acc:0.6859
+############# Starting Epoch 38 | LR: 0.001 #############
+Train-38 epoch | loss:0.00045127 | acc:0.6800
+############# Starting Epoch 39 | LR: 0.001 #############
+Train-39 epoch | loss:0.00043226 | acc:0.6993
+############# Starting Epoch 40 | LR: 0.001 #############
+Train-40 epoch | loss:0.00042932 | acc:0.7063
+############# Starting Epoch 41 | LR: 0.001 #############
+Train-41 epoch | loss:0.00042629 | acc:0.7009
+############# Starting Epoch 42 | LR: 0.001 #############
+Train-42 epoch | loss:0.00041873 | acc:0.7069
+############# Starting Epoch 43 | LR: 0.001 #############
+Train-43 epoch | loss:0.00041227 | acc:0.7123
+############# Starting Epoch 44 | LR: 0.001 #############
+Train-44 epoch | loss:0.00041550 | acc:0.7076
+############# Starting Epoch 45 | LR: 0.001 #############
+Train-45 epoch | loss:0.00041101 | acc:0.7200
+############# Starting Epoch 46 | LR: 0.001 #############
+Train-46 epoch | loss:0.00040301 | acc:0.7282
+############# Starting Epoch 47 | LR: 0.001 #############
+Train-47 epoch | loss:0.00040878 | acc:0.7293
+############# Starting Epoch 48 | LR: 0.001 #############
+Train-48 epoch | loss:0.00040073 | acc:0.7319
+############# Starting Epoch 49 | LR: 0.001 #############
+Train-49 epoch | loss:0.00039666 | acc:0.7371
+############# Starting Epoch 50 | LR: 0.001 #############
+Train-50 epoch | loss:0.00039497 | acc:0.7409
+############# Starting Epoch 51 | LR: 0.001 #############
+Train-51 epoch | loss:0.00038923 | acc:0.7552
+############# Starting Epoch 52 | LR: 0.001 #############
+Train-52 epoch | loss:0.00038473 | acc:0.7530
+############# Starting Epoch 53 | LR: 0.001 #############
+Train-53 epoch | loss:0.00037983 | acc:0.7546
+############# Starting Epoch 54 | LR: 0.001 #############
+Train-54 epoch | loss:0.00037846 | acc:0.7616
+############# Starting Epoch 55 | LR: 0.001 #############
+Train-55 epoch | loss:0.00037970 | acc:0.7620
+############# Starting Epoch 56 | LR: 0.001 #############
+Train-56 epoch | loss:0.00037175 | acc:0.7618
+############# Starting Epoch 57 | LR: 0.001 #############
+Train-57 epoch | loss:0.00037031 | acc:0.7638
+############# Starting Epoch 58 | LR: 0.001 #############
+Train-58 epoch | loss:0.00036572 | acc:0.7722
+############# Starting Epoch 59 | LR: 0.001 #############
+Train-59 epoch | loss:0.00035885 | acc:0.7821
+############# Starting Epoch 60 | LR: 0.001 #############
+Train-60 epoch | loss:0.00035538 | acc:0.7858
+############# Starting Epoch 61 | LR: 0.001 #############
+Train-61 epoch | loss:0.00035293 | acc:0.7859
+############# Starting Epoch 62 | LR: 0.001 #############
+Train-62 epoch | loss:0.00034782 | acc:0.7899
+############# Starting Epoch 63 | LR: 0.001 #############
+Train-63 epoch | loss:0.00035055 | acc:0.7954
+############# Starting Epoch 64 | LR: 0.001 #############
+Train-64 epoch | loss:0.00034378 | acc:0.7993
+############# Starting Epoch 65 | LR: 0.001 #############
+Train-65 epoch | loss:0.00034715 | acc:0.7918
+############# Starting Epoch 66 | LR: 0.001 #############
+Train-66 epoch | loss:0.00033599 | acc:0.8156
+############# Starting Epoch 67 | LR: 0.001 #############
+Train-67 epoch | loss:0.00033428 | acc:0.8153
+############# Starting Epoch 68 | LR: 0.001 #############
+Train-68 epoch | loss:0.00033926 | acc:0.8081
+############# Starting Epoch 69 | LR: 0.001 #############
+Train-69 epoch | loss:0.00033453 | acc:0.8088
+############# Starting Epoch 70 | LR: 0.001 #############
+Train-70 epoch | loss:0.00032417 | acc:0.8215
+############# Starting Epoch 71 | LR: 0.001 #############
+Train-71 epoch | loss:0.00032359 | acc:0.8218
+############# Starting Epoch 72 | LR: 0.001 #############
+Train-72 epoch | loss:0.00031955 | acc:0.8305
+############# Starting Epoch 73 | LR: 0.001 #############
+Train-73 epoch | loss:0.00030756 | acc:0.8429
+############# Starting Epoch 74 | LR: 0.001 #############
+Train-74 epoch | loss:0.00031590 | acc:0.8209
+############# Starting Epoch 75 | LR: 0.001 #############
+Train-75 epoch | loss:0.00030849 | acc:0.8412
+############# Starting Epoch 76 | LR: 0.001 #############
+Train-76 epoch | loss:0.00030707 | acc:0.8386
+############# Starting Epoch 77 | LR: 0.001 #############
+Train-77 epoch | loss:0.00030144 | acc:0.8413
+############# Starting Epoch 78 | LR: 0.001 #############
+Train-78 epoch | loss:0.00030710 | acc:0.8444
+############# Starting Epoch 79 | LR: 0.001 #############
+Train-79 epoch | loss:0.00029767 | acc:0.8518
+############# Starting Epoch 80 | LR: 0.001 #############
+Train-80 epoch | loss:0.00029600 | acc:0.8478
+############# Starting Epoch 81 | LR: 0.001 #############
+Train-81 epoch | loss:0.00029267 | acc:0.8524
+############# Starting Epoch 82 | LR: 0.001 #############
+Train-82 epoch | loss:0.00028673 | acc:0.8568
+############# Starting Epoch 83 | LR: 0.001 #############
+Train-83 epoch | loss:0.00028374 | acc:0.8679
+############# Starting Epoch 84 | LR: 0.001 #############
+Train-84 epoch | loss:0.00028779 | acc:0.8641
+############# Starting Epoch 85 | LR: 0.001 #############
+Train-85 epoch | loss:0.00029152 | acc:0.8550
+############# Starting Epoch 86 | LR: 0.001 #############
+Train-86 epoch | loss:0.00028684 | acc:0.8586
+############# Starting Epoch 87 | LR: 0.001 #############
+Train-87 epoch | loss:0.00027812 | acc:0.8661
+############# Starting Epoch 88 | LR: 0.001 #############
+Train-88 epoch | loss:0.00027480 | acc:0.8721
+############# Starting Epoch 89 | LR: 0.001 #############
+Train-89 epoch | loss:0.00027366 | acc:0.8719
+############# Starting Epoch 90 | LR: 0.0001 #############
+Train-90 epoch | loss:0.00025291 | acc:0.8803
+############# Starting Epoch 91 | LR: 0.0001 #############
+Train-91 epoch | loss:0.00024143 | acc:0.8856
+############# Starting Epoch 92 | LR: 0.0001 #############
+Train-92 epoch | loss:0.00023006 | acc:0.8985
+############# Starting Epoch 93 | LR: 0.0001 #############
+Train-93 epoch | loss:0.00022089 | acc:0.9095
+############# Starting Epoch 94 | LR: 0.0001 #############
+Train-94 epoch | loss:0.00021590 | acc:0.9067
+############# Starting Epoch 95 | LR: 0.0001 #############
+Train-95 epoch | loss:0.00021403 | acc:0.9090
+############# Starting Epoch 96 | LR: 0.0001 #############
+Train-96 epoch | loss:0.00021332 | acc:0.9075
+############# Starting Epoch 97 | LR: 0.0001 #############
+Train-97 epoch | loss:0.00020280 | acc:0.9160
+############# Starting Epoch 98 | LR: 0.0001 #############
+Train-98 epoch | loss:0.00020426 | acc:0.9185
+############# Starting Epoch 99 | LR: 0.0001 #############
+Train-99 epoch | loss:0.00020074 | acc:0.9171
+############# Starting Epoch 100 | LR: 0.0001 #############
+Train-100 epoch | loss:0.00020112 | acc:0.9176
+############# Starting Epoch 101 | LR: 0.0001 #############
+Train-101 epoch | loss:0.00019833 | acc:0.9205
+############# Starting Epoch 102 | LR: 0.0001 #############
+Train-102 epoch | loss:0.00019398 | acc:0.9241
+############# Starting Epoch 103 | LR: 0.0001 #############
+Train-103 epoch | loss:0.00019515 | acc:0.9208
+############# Starting Epoch 104 | LR: 0.0001 #############
+Train-104 epoch | loss:0.00019478 | acc:0.9220
+############# Starting Epoch 105 | LR: 0.0001 #############
+Train-105 epoch | loss:0.00019824 | acc:0.9219
+############# Starting Epoch 106 | LR: 0.0001 #############
+Train-106 epoch | loss:0.00019306 | acc:0.9211
+############# Starting Epoch 107 | LR: 0.0001 #############
+Train-107 epoch | loss:0.00018900 | acc:0.9286
+############# Starting Epoch 108 | LR: 0.0001 #############
+Train-108 epoch | loss:0.00018789 | acc:0.9331
+############# Starting Epoch 109 | LR: 0.0001 #############
+Train-109 epoch | loss:0.00018824 | acc:0.9288
+############# Starting Epoch 110 | LR: 0.0001 #############
+Train-110 epoch | loss:0.00018084 | acc:0.9310
+############# Starting Epoch 111 | LR: 0.0001 #############
+Train-111 epoch | loss:0.00018775 | acc:0.9282
+############# Starting Epoch 112 | LR: 0.0001 #############
+Train-112 epoch | loss:0.00018398 | acc:0.9307
+############# Starting Epoch 113 | LR: 0.0001 #############
+Train-113 epoch | loss:0.00018828 | acc:0.9246
+############# Starting Epoch 114 | LR: 0.0001 #############
+Train-114 epoch | loss:0.00018341 | acc:0.9293
+############# Starting Epoch 115 | LR: 0.0001 #############
+Train-115 epoch | loss:0.00018838 | acc:0.9280
+############# Starting Epoch 116 | LR: 0.0001 #############
+Train-116 epoch | loss:0.00017617 | acc:0.9341
+############# Starting Epoch 117 | LR: 0.0001 #############
+Train-117 epoch | loss:0.00017420 | acc:0.9396
+############# Starting Epoch 118 | LR: 0.0001 #############
+Train-118 epoch | loss:0.00017808 | acc:0.9343
+############# Starting Epoch 119 | LR: 0.0001 #############
+Train-119 epoch | loss:0.00017586 | acc:0.9322
+############# Starting Epoch 120 | LR: 1e-05 #############
+Train-120 epoch | loss:0.00017266 | acc:0.9394
+############# Starting Epoch 121 | LR: 1e-05 #############
+Train-121 epoch | loss:0.00017100 | acc:0.9389
+############# Starting Epoch 122 | LR: 1e-05 #############
+Train-122 epoch | loss:0.00017401 | acc:0.9366
+############# Starting Epoch 123 | LR: 1e-05 #############
+Train-123 epoch | loss:0.00017525 | acc:0.9346
+############# Starting Epoch 124 | LR: 1e-05 #############
+Train-124 epoch | loss:0.00017100 | acc:0.9351
+############# Starting Epoch 125 | LR: 1e-05 #############
+Train-125 epoch | loss:0.00016870 | acc:0.9411
+############# Starting Epoch 126 | LR: 1e-05 #############
+Train-126 epoch | loss:0.00017437 | acc:0.9373
+############# Starting Epoch 127 | LR: 1e-05 #############
+Train-127 epoch | loss:0.00016626 | acc:0.9409
+############# Starting Epoch 128 | LR: 1e-05 #############
+Train-128 epoch | loss:0.00016755 | acc:0.9394
+############# Starting Epoch 129 | LR: 1e-05 #############
+Train-129 epoch | loss:0.00017132 | acc:0.9400
+############# Starting Epoch 130 | LR: 1e-05 #############
+Train-130 epoch | loss:0.00016673 | acc:0.9428
+############# Starting Epoch 131 | LR: 1e-05 #############
+Train-131 epoch | loss:0.00016986 | acc:0.9393
+############# Starting Epoch 132 | LR: 1e-05 #############
+Train-132 epoch | loss:0.00017048 | acc:0.9374
+############# Starting Epoch 133 | LR: 1e-05 #############
+Train-133 epoch | loss:0.00017709 | acc:0.9364
+############# Starting Epoch 134 | LR: 1e-05 #############
+Train-134 epoch | loss:0.00017151 | acc:0.9380
+############# Starting Epoch 135 | LR: 1e-05 #############
+Train-135 epoch | loss:0.00016773 | acc:0.9449
+############# Starting Epoch 136 | LR: 1e-05 #############
+Train-136 epoch | loss:0.00017378 | acc:0.9339
+############# Starting Epoch 137 | LR: 1e-05 #############
+Train-137 epoch | loss:0.00016373 | acc:0.9402
+############# Starting Epoch 138 | LR: 1e-05 #############
+Train-138 epoch | loss:0.00017098 | acc:0.9389
+############# Starting Epoch 139 | LR: 1e-05 #############
+Train-139 epoch | loss:0.00016624 | acc:0.9428
+############# Starting Epoch 140 | LR: 1e-05 #############
+Train-140 epoch | loss:0.00016680 | acc:0.9417
+############# Starting Epoch 141 | LR: 0.001 #############
+Train-141 epoch | loss:0.00028169 | acc:0.8651
+############# Starting Epoch 142 | LR: 0.001 #############
+Train-142 epoch | loss:0.00035632 | acc:0.7982
+############# Starting Epoch 143 | LR: 0.001 #############
+Train-143 epoch | loss:0.00035264 | acc:0.8039
+############# Starting Epoch 144 | LR: 0.001 #############
+Train-144 epoch | loss:0.00036115 | acc:0.7901
+############# Starting Epoch 145 | LR: 0.001 #############
+Train-145 epoch | loss:0.00033505 | acc:0.8154
+############# Starting Epoch 146 | LR: 0.001 #############
+Train-146 epoch | loss:0.00034572 | acc:0.8056
+############# Starting Epoch 147 | LR: 0.001 #############
+Train-147 epoch | loss:0.00034578 | acc:0.8025
+############# Starting Epoch 148 | LR: 0.001 #############
+Train-148 epoch | loss:0.00033373 | acc:0.8147
+############# Starting Epoch 149 | LR: 0.001 #############
+Train-149 epoch | loss:0.00033053 | acc:0.8188
+############# Starting Epoch 150 | LR: 0.001 #############
+Train-150 epoch | loss:0.00032361 | acc:0.8302
+############# Starting Epoch 151 | LR: 0.001 #############
+Train-151 epoch | loss:0.00031452 | acc:0.8287
+############# Starting Epoch 152 | LR: 0.001 #############
+Train-152 epoch | loss:0.00030596 | acc:0.8306
+############# Starting Epoch 153 | LR: 0.001 #############
+Train-153 epoch | loss:0.00030813 | acc:0.8388
+############# Starting Epoch 154 | LR: 0.001 #############
+Train-154 epoch | loss:0.00031528 | acc:0.8241
+############# Starting Epoch 155 | LR: 0.001 #############
+Train-155 epoch | loss:0.00031469 | acc:0.8329
+############# Starting Epoch 156 | LR: 0.001 #############
+Train-156 epoch | loss:0.00031491 | acc:0.8301
+############# Starting Epoch 157 | LR: 0.001 #############
+Train-157 epoch | loss:0.00030474 | acc:0.8393
+############# Starting Epoch 158 | LR: 0.001 #############
+Train-158 epoch | loss:0.00029547 | acc:0.8464
+############# Starting Epoch 159 | LR: 0.001 #############
+Train-159 epoch | loss:0.00029448 | acc:0.8438
+############# Starting Epoch 160 | LR: 0.001 #############
+Train-160 epoch | loss:0.00030205 | acc:0.8325
+############# Starting Epoch 161 | LR: 0.0001 #############
+Train-161 epoch | loss:0.00027126 | acc:0.8667
+############# Starting Epoch 162 | LR: 0.0001 #############
+Train-162 epoch | loss:0.00024458 | acc:0.8827
+############# Starting Epoch 163 | LR: 0.0001 #############
+Train-163 epoch | loss:0.00023847 | acc:0.8846
+############# Starting Epoch 164 | LR: 0.0001 #############
+Train-164 epoch | loss:0.00023165 | acc:0.8966
+############# Starting Epoch 165 | LR: 0.0001 #############
+Train-165 epoch | loss:0.00022427 | acc:0.9013
+############# Starting Epoch 166 | LR: 0.0001 #############
+Train-166 epoch | loss:0.00022742 | acc:0.8917
+############# Starting Epoch 167 | LR: 0.0001 #############
+Train-167 epoch | loss:0.00021830 | acc:0.9081
+############# Starting Epoch 168 | LR: 0.0001 #############
+Train-168 epoch | loss:0.00021995 | acc:0.9010
+############# Starting Epoch 169 | LR: 0.0001 #############
+Train-169 epoch | loss:0.00021070 | acc:0.9111
+############# Starting Epoch 170 | LR: 0.0001 #############
+Train-170 epoch | loss:0.00020954 | acc:0.9129
+############# Starting Epoch 171 | LR: 0.0001 #############
+Train-171 epoch | loss:0.00021056 | acc:0.9102
+############# Starting Epoch 172 | LR: 0.0001 #############
+Train-172 epoch | loss:0.00020685 | acc:0.9180
+############# Starting Epoch 173 | LR: 0.0001 #############
+Train-173 epoch | loss:0.00020871 | acc:0.9115
+############# Starting Epoch 174 | LR: 0.0001 #############
+Train-174 epoch | loss:0.00020434 | acc:0.9130
+############# Starting Epoch 175 | LR: 0.0001 #############
+Train-175 epoch | loss:0.00020648 | acc:0.9137
+############# Starting Epoch 176 | LR: 0.0001 #############
+Train-176 epoch | loss:0.00020275 | acc:0.9153
+############# Starting Epoch 177 | LR: 0.0001 #############
+Train-177 epoch | loss:0.00020056 | acc:0.9187
+############# Starting Epoch 178 | LR: 0.0001 #############
+Train-178 epoch | loss:0.00019951 | acc:0.9168
+############# Starting Epoch 179 | LR: 0.0001 #############
+Train-179 epoch | loss:0.00019644 | acc:0.9169
+############# Starting Epoch 180 | LR: 0.0001 #############
+Train-180 epoch | loss:0.00019805 | acc:0.9237
+############# Starting Epoch 181 | LR: 0.0001 #############
+Train-181 epoch | loss:0.00019137 | acc:0.9250
+############# Starting Epoch 182 | LR: 0.0001 #############
+Train-182 epoch | loss:0.00018663 | acc:0.9269
+############# Starting Epoch 183 | LR: 0.0001 #############
+Train-183 epoch | loss:0.00018951 | acc:0.9241
+############# Starting Epoch 184 | LR: 0.0001 #############
+Train-184 epoch | loss:0.00019263 | acc:0.9271
+############# Starting Epoch 185 | LR: 0.0001 #############
+Train-185 epoch | loss:0.00019483 | acc:0.9207
+############# Starting Epoch 186 | LR: 0.0001 #############
+Train-186 epoch | loss:0.00018840 | acc:0.9266
+############# Starting Epoch 187 | LR: 0.0001 #############
+Train-187 epoch | loss:0.00019004 | acc:0.9247
+############# Starting Epoch 188 | LR: 0.0001 #############
+Train-188 epoch | loss:0.00018279 | acc:0.9336
+############# Starting Epoch 189 | LR: 0.0001 #############
+Train-189 epoch | loss:0.00018870 | acc:0.9296
+############# Starting Epoch 190 | LR: 0.0001 #############
+Train-190 epoch | loss:0.00018818 | acc:0.9300
+############# Starting Epoch 191 | LR: 1e-05 #############
+Train-191 epoch | loss:0.00018184 | acc:0.9293
+############# Starting Epoch 192 | LR: 1e-05 #############
+Train-192 epoch | loss:0.00018469 | acc:0.9290
+############# Starting Epoch 193 | LR: 1e-05 #############
+Train-193 epoch | loss:0.00018105 | acc:0.9340
+############# Starting Epoch 194 | LR: 1e-05 #############
+Train-194 epoch | loss:0.00018234 | acc:0.9310
+############# Starting Epoch 195 | LR: 1e-05 #############
+Train-195 epoch | loss:0.00017746 | acc:0.9377
+############# Starting Epoch 196 | LR: 1e-05 #############
+Train-196 epoch | loss:0.00018027 | acc:0.9372
+############# Starting Epoch 197 | LR: 1e-05 #############
+Train-197 epoch | loss:0.00017934 | acc:0.9277
+############# Starting Epoch 198 | LR: 1e-05 #############
+Train-198 epoch | loss:0.00018188 | acc:0.9330
+############# Starting Epoch 199 | LR: 1e-05 #############
+Train-199 epoch | loss:0.00017761 | acc:0.9370

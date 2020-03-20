@@ -1,0 +1,445 @@
+******************************
+Namespace(board=True, cfg='configs/elephant/train.yaml', debug=False, detector='yolo', device=device(type='cuda', index=0), dist_backend='nccl', dist_url='tcp://192.168.1.214:23345', exp_id='alphapose_12022020', gpus=[0], launcher='none', map=True, nThreads=60, rank=-1, snapshot=2, sync=False, work_dir='./exp/alphapose_12022020-train.yaml/', world_size=4)
+******************************
+{'DATASET': {'TRAIN': {'TYPE': 'CustomDataset', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'ANN': 'train', 'AUG': {'FLIP': False, 'ROT_FACTOR': 40, 'SCALE_FACTOR': 0.3, 'NUM_JOINTS_HALF_BODY': 8, 'PROB_HALF_BODY': -1}}, 'VAL': {'TYPE': 'CustomDataset', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'ANN': 'test'}, 'TEST': {'TYPE': 'CustomDataset', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'DET_FILE': './exp/json/test_det_yolo.json', 'ANN': 'test'}}, 'DATA_PRESET': {'TYPE': 'simple', 'SIGMA': 2, 'NUM_JOINTS': 32, 'IMAGE_SIZE': [256, 192], 'HEATMAP_SIZE': [64, 48]}, 'MODEL': {'TYPE': 'FastPose', 'PRETRAINED': '', 'TRY_LOAD': '', 'NUM_DECONV_FILTERS': [256, 256, 256], 'NUM_LAYERS': 50}, 'DETECTOR': {'NAME': 'yolo', 'CONFIG': 'detector/yolo/cfg/yolov3-spp.cfg', 'WEIGHTS': 'detector/yolo/data/yolov3-spp.weights', 'NMS_THRES': 0.6, 'CONFIDENCE': 0.05}, 'TRAIN': {'WORLD_SIZE': 4, 'BATCH_SIZE': 32, 'BEGIN_EPOCH': 0, 'END_EPOCH': 200, 'OPTIMIZER': 'adam', 'LR': 0.001, 'LR_FACTOR': 0.1, 'LR_STEP': [90, 120], 'DPG_MILESTONE': 140, 'DPG_STEP': [20, 50]}, 'FILE_NAME': 'train.yaml'}
+******************************
+******************************
+Namespace(board=True, cfg='configs/elephant/train.yaml', debug=False, detector='yolo', device=device(type='cuda', index=0), dist_backend='nccl', dist_url='tcp://192.168.1.214:23345', exp_id='alphapose_12022020', gpus=[0], launcher='none', map=True, nThreads=60, rank=-1, snapshot=2, sync=False, work_dir='./exp/alphapose_12022020-train.yaml/', world_size=4)
+******************************
+{'DATASET': {'TRAIN': {'TYPE': 'CustomDataset', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'ANN': 'train', 'AUG': {'FLIP': False, 'ROT_FACTOR': 40, 'SCALE_FACTOR': 0.3, 'NUM_JOINTS_HALF_BODY': 8, 'PROB_HALF_BODY': -1}}, 'VAL': {'TYPE': 'CustomDataset', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'ANN': 'test'}, 'TEST': {'TYPE': 'CustomDataset', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'DET_FILE': './exp/json/test_det_yolo.json', 'ANN': 'test'}}, 'DATA_PRESET': {'TYPE': 'simple', 'SIGMA': 2, 'NUM_JOINTS': 32, 'IMAGE_SIZE': [256, 192], 'HEATMAP_SIZE': [64, 48]}, 'MODEL': {'TYPE': 'FastPose', 'PRETRAINED': '', 'TRY_LOAD': '', 'NUM_DECONV_FILTERS': [256, 256, 256], 'NUM_LAYERS': 50}, 'DETECTOR': {'NAME': 'yolo', 'CONFIG': 'detector/yolo/cfg/yolov3-spp.cfg', 'WEIGHTS': 'detector/yolo/data/yolov3-spp.weights', 'NMS_THRES': 0.6, 'CONFIDENCE': 0.05}, 'TRAIN': {'WORLD_SIZE': 4, 'BATCH_SIZE': 32, 'BEGIN_EPOCH': 0, 'END_EPOCH': 200, 'OPTIMIZER': 'adam', 'LR': 0.001, 'LR_FACTOR': 0.1, 'LR_STEP': [90, 120], 'DPG_MILESTONE': 140, 'DPG_STEP': [20, 50]}, 'FILE_NAME': 'train.yaml'}
+******************************
+******************************
+Namespace(board=True, cfg='configs/elephant/train.yaml', debug=False, detector='yolo', device=device(type='cuda', index=0), dist_backend='nccl', dist_url='tcp://192.168.1.214:23345', exp_id='alphapose_12022020', gpus=[0], launcher='none', map=True, nThreads=60, rank=-1, snapshot=2, sync=False, work_dir='./exp/alphapose_12022020-train.yaml/', world_size=4)
+******************************
+{'DATASET': {'TRAIN': {'TYPE': 'CustomDataset', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'ANN': 'train', 'AUG': {'FLIP': False, 'ROT_FACTOR': 40, 'SCALE_FACTOR': 0.3, 'NUM_JOINTS_HALF_BODY': 8, 'PROB_HALF_BODY': -1}}, 'VAL': {'TYPE': 'CustomDataset', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'ANN': 'test'}, 'TEST': {'TYPE': 'CustomDataset', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'DET_FILE': './exp/json/test_det_yolo.json', 'ANN': 'test'}}, 'DATA_PRESET': {'TYPE': 'simple', 'SIGMA': 2, 'NUM_JOINTS': 32, 'IMAGE_SIZE': [256, 192], 'HEATMAP_SIZE': [64, 48]}, 'MODEL': {'TYPE': 'FastPose', 'PRETRAINED': '', 'TRY_LOAD': '', 'NUM_DECONV_FILTERS': [256, 256, 256], 'NUM_LAYERS': 50}, 'DETECTOR': {'NAME': 'yolo', 'CONFIG': 'detector/yolo/cfg/yolov3-spp.cfg', 'WEIGHTS': 'detector/yolo/data/yolov3-spp.weights', 'NMS_THRES': 0.6, 'CONFIDENCE': 0.05}, 'TRAIN': {'WORLD_SIZE': 4, 'BATCH_SIZE': 32, 'BEGIN_EPOCH': 0, 'END_EPOCH': 200, 'OPTIMIZER': 'adam', 'LR': 0.001, 'LR_FACTOR': 0.1, 'LR_STEP': [90, 120], 'DPG_MILESTONE': 140, 'DPG_STEP': [20, 50]}, 'FILE_NAME': 'train.yaml'}
+******************************
+******************************
+Namespace(board=True, cfg='configs/elephant/train.yaml', debug=False, detector='yolo', device=device(type='cuda', index=0), dist_backend='nccl', dist_url='tcp://192.168.1.214:23345', exp_id='alphapose_12022020', gpus=[0], launcher='none', map=True, nThreads=60, rank=-1, snapshot=2, sync=False, work_dir='./exp/alphapose_12022020-train.yaml/', world_size=4)
+******************************
+{'DATASET': {'TRAIN': {'TYPE': 'CustomDataset', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'ANN': 'train', 'AUG': {'FLIP': False, 'ROT_FACTOR': 40, 'SCALE_FACTOR': 0.3, 'NUM_JOINTS_HALF_BODY': 8, 'PROB_HALF_BODY': -1}}, 'VAL': {'TYPE': 'CustomDataset', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'ANN': 'test'}, 'TEST': {'TYPE': 'CustomDataset', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'DET_FILE': './exp/json/test_det_yolo.json', 'ANN': 'test'}}, 'DATA_PRESET': {'TYPE': 'simple', 'SIGMA': 2, 'NUM_JOINTS': 32, 'IMAGE_SIZE': [256, 192], 'HEATMAP_SIZE': [64, 48]}, 'MODEL': {'TYPE': 'FastPose', 'PRETRAINED': '', 'TRY_LOAD': '', 'NUM_DECONV_FILTERS': [256, 256, 256], 'NUM_LAYERS': 50}, 'DETECTOR': {'NAME': 'yolo', 'CONFIG': 'detector/yolo/cfg/yolov3-spp.cfg', 'WEIGHTS': 'detector/yolo/data/yolov3-spp.weights', 'NMS_THRES': 0.6, 'CONFIDENCE': 0.05}, 'TRAIN': {'WORLD_SIZE': 4, 'BATCH_SIZE': 32, 'BEGIN_EPOCH': 0, 'END_EPOCH': 200, 'OPTIMIZER': 'adam', 'LR': 0.001, 'LR_FACTOR': 0.1, 'LR_STEP': [90, 120], 'DPG_MILESTONE': 140, 'DPG_STEP': [20, 50]}, 'FILE_NAME': 'train.yaml'}
+******************************
+Create new model
+=> init weights
+******************************
+Namespace(board=True, cfg='configs/elephant/train.yaml', debug=False, detector='yolo', device=device(type='cuda', index=0), dist_backend='nccl', dist_url='tcp://192.168.1.214:23345', exp_id='alphapose_12022020', gpus=[0], launcher='none', map=True, nThreads=60, rank=-1, snapshot=2, sync=False, work_dir='./exp/alphapose_12022020-train.yaml/', world_size=4)
+******************************
+{'DATASET': {'TRAIN': {'TYPE': 'Elephant', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'ANN': 'train', 'AUG': {'FLIP': False, 'ROT_FACTOR': 40, 'SCALE_FACTOR': 0.3, 'NUM_JOINTS_HALF_BODY': 8, 'PROB_HALF_BODY': -1}}, 'VAL': {'TYPE': 'Elephant', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'ANN': 'test'}, 'TEST': {'TYPE': 'Elephant', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'DET_FILE': './exp/json/test_det_yolo.json', 'ANN': 'test'}}, 'DATA_PRESET': {'TYPE': 'simple', 'SIGMA': 2, 'NUM_JOINTS': 32, 'IMAGE_SIZE': [256, 192], 'HEATMAP_SIZE': [64, 48]}, 'MODEL': {'TYPE': 'FastPose', 'PRETRAINED': '', 'TRY_LOAD': '', 'NUM_DECONV_FILTERS': [256, 256, 256], 'NUM_LAYERS': 50}, 'DETECTOR': {'NAME': 'yolo', 'CONFIG': 'detector/yolo/cfg/yolov3-spp.cfg', 'WEIGHTS': 'detector/yolo/data/yolov3-spp.weights', 'NMS_THRES': 0.6, 'CONFIDENCE': 0.05}, 'TRAIN': {'WORLD_SIZE': 4, 'BATCH_SIZE': 32, 'BEGIN_EPOCH': 0, 'END_EPOCH': 200, 'OPTIMIZER': 'adam', 'LR': 0.001, 'LR_FACTOR': 0.1, 'LR_STEP': [90, 120], 'DPG_MILESTONE': 140, 'DPG_STEP': [20, 50]}, 'FILE_NAME': 'train.yaml'}
+******************************
+Create new model
+=> init weights
+******************************
+Namespace(board=True, cfg='configs/elephant/train.yaml', debug=False, detector='yolo', device=device(type='cuda', index=0), dist_backend='nccl', dist_url='tcp://192.168.1.214:23345', exp_id='alphapose_12022020', gpus=[0], launcher='none', map=True, nThreads=60, rank=-1, snapshot=2, sync=False, work_dir='./exp/alphapose_12022020-train.yaml/', world_size=4)
+******************************
+{'DATASET': {'TRAIN': {'TYPE': 'Elephant', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'ANN': 'train', 'AUG': {'FLIP': False, 'ROT_FACTOR': 40, 'SCALE_FACTOR': 0.3, 'NUM_JOINTS_HALF_BODY': 8, 'PROB_HALF_BODY': -1}}, 'VAL': {'TYPE': 'Elephant', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'ANN': 'test'}, 'TEST': {'TYPE': 'Elephant', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'DET_FILE': './exp/json/test_det_yolo.json', 'ANN': 'test'}}, 'DATA_PRESET': {'TYPE': 'simple', 'SIGMA': 2, 'NUM_JOINTS': 32, 'IMAGE_SIZE': [256, 192], 'HEATMAP_SIZE': [64, 48]}, 'MODEL': {'TYPE': 'FastPose', 'PRETRAINED': '', 'TRY_LOAD': '', 'NUM_DECONV_FILTERS': [256, 256, 256], 'NUM_LAYERS': 50}, 'DETECTOR': {'NAME': 'yolo', 'CONFIG': 'detector/yolo/cfg/yolov3-spp.cfg', 'WEIGHTS': 'detector/yolo/data/yolov3-spp.weights', 'NMS_THRES': 0.6, 'CONFIDENCE': 0.05}, 'TRAIN': {'WORLD_SIZE': 4, 'BATCH_SIZE': 32, 'BEGIN_EPOCH': 0, 'END_EPOCH': 200, 'OPTIMIZER': 'adam', 'LR': 0.001, 'LR_FACTOR': 0.1, 'LR_STEP': [90, 120], 'DPG_MILESTONE': 140, 'DPG_STEP': [20, 50]}, 'FILE_NAME': 'train.yaml'}
+******************************
+Create new model
+=> init weights
+******************************
+Namespace(board=True, cfg='configs/elephant/train.yaml', debug=False, detector='yolo', device=device(type='cuda', index=0), dist_backend='nccl', dist_url='tcp://192.168.1.214:23345', exp_id='alphapose_12022020', gpus=[0], launcher='none', map=True, nThreads=60, rank=-1, snapshot=2, sync=False, work_dir='./exp/alphapose_12022020-train.yaml/', world_size=4)
+******************************
+{'DATASET': {'TRAIN': {'TYPE': 'Elephant', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'ANN': 'train', 'AUG': {'FLIP': False, 'ROT_FACTOR': 40, 'SCALE_FACTOR': 0.3, 'NUM_JOINTS_HALF_BODY': 8, 'PROB_HALF_BODY': -1}}, 'VAL': {'TYPE': 'Elephant', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'ANN': 'test'}, 'TEST': {'TYPE': 'Elephant', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'DET_FILE': './exp/json/test_det_yolo.json', 'ANN': 'test'}}, 'DATA_PRESET': {'TYPE': 'simple', 'SIGMA': 2, 'NUM_JOINTS': 32, 'IMAGE_SIZE': [256, 192], 'HEATMAP_SIZE': [64, 48]}, 'MODEL': {'TYPE': 'FastPose', 'PRETRAINED': '', 'TRY_LOAD': '', 'NUM_DECONV_FILTERS': [256, 256, 256], 'NUM_LAYERS': 50}, 'DETECTOR': {'NAME': 'yolo', 'CONFIG': 'detector/yolo/cfg/yolov3-spp.cfg', 'WEIGHTS': 'detector/yolo/data/yolov3-spp.weights', 'NMS_THRES': 0.6, 'CONFIDENCE': 0.05}, 'TRAIN': {'WORLD_SIZE': 4, 'BATCH_SIZE': 32, 'BEGIN_EPOCH': 0, 'END_EPOCH': 200, 'OPTIMIZER': 'adam', 'LR': 0.001, 'LR_FACTOR': 0.1, 'LR_STEP': [90, 120], 'DPG_MILESTONE': 140, 'DPG_STEP': [20, 50]}, 'FILE_NAME': 'train.yaml'}
+******************************
+Create new model
+=> init weights
+******************************
+Namespace(board=True, cfg='configs/elephant/train.yaml', debug=False, detector='yolo', device=device(type='cuda', index=0), dist_backend='nccl', dist_url='tcp://192.168.1.214:23345', exp_id='alphapose_12022020', gpus=[0], launcher='none', map=True, nThreads=60, rank=-1, snapshot=2, sync=False, work_dir='./exp/alphapose_12022020-train.yaml/', world_size=4)
+******************************
+{'DATASET': {'TRAIN': {'TYPE': 'Elephant', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'ANN': 'train', 'AUG': {'FLIP': False, 'ROT_FACTOR': 40, 'SCALE_FACTOR': 0.3, 'NUM_JOINTS_HALF_BODY': 8, 'PROB_HALF_BODY': -1}}, 'VAL': {'TYPE': 'Elephant', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'ANN': 'test'}, 'TEST': {'TYPE': 'Elephant', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'DET_FILE': './exp/json/test_det_yolo.json', 'ANN': 'test'}}, 'DATA_PRESET': {'TYPE': 'simple', 'SIGMA': 2, 'NUM_JOINTS': 32, 'IMAGE_SIZE': [256, 192], 'HEATMAP_SIZE': [64, 48]}, 'MODEL': {'TYPE': 'FastPose', 'PRETRAINED': '', 'TRY_LOAD': '', 'NUM_DECONV_FILTERS': [256, 256, 256], 'NUM_LAYERS': 50}, 'DETECTOR': {'NAME': 'yolo', 'CONFIG': 'detector/yolo/cfg/yolov3-spp.cfg', 'WEIGHTS': 'detector/yolo/data/yolov3-spp.weights', 'NMS_THRES': 0.6, 'CONFIDENCE': 0.05}, 'TRAIN': {'WORLD_SIZE': 4, 'BATCH_SIZE': 32, 'BEGIN_EPOCH': 0, 'END_EPOCH': 200, 'OPTIMIZER': 'adam', 'LR': 0.001, 'LR_FACTOR': 0.1, 'LR_STEP': [90, 120], 'DPG_MILESTONE': 140, 'DPG_STEP': [20, 50]}, 'FILE_NAME': 'train.yaml'}
+******************************
+Create new model
+=> init weights
+******************************
+Namespace(board=True, cfg='configs/elephant/train.yaml', debug=False, detector='yolo', device=device(type='cuda', index=0), dist_backend='nccl', dist_url='tcp://192.168.1.214:23345', exp_id='alphapose_12022020', gpus=[0], launcher='none', map=True, nThreads=60, rank=-1, snapshot=2, sync=False, work_dir='./exp/alphapose_12022020-train.yaml/', world_size=4)
+******************************
+{'DATASET': {'TRAIN': {'TYPE': 'Elephant', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'ANN': 'train', 'AUG': {'FLIP': False, 'ROT_FACTOR': 40, 'SCALE_FACTOR': 0.3, 'NUM_JOINTS_HALF_BODY': 8, 'PROB_HALF_BODY': -1}}, 'VAL': {'TYPE': 'Elephant', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'ANN': 'test'}, 'TEST': {'TYPE': 'Elephant', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'DET_FILE': './exp/json/test_det_yolo.json', 'ANN': 'test'}}, 'DATA_PRESET': {'TYPE': 'simple', 'SIGMA': 2, 'NUM_JOINTS': 32, 'IMAGE_SIZE': [256, 192], 'HEATMAP_SIZE': [64, 48]}, 'MODEL': {'TYPE': 'FastPose', 'PRETRAINED': '', 'TRY_LOAD': '', 'NUM_DECONV_FILTERS': [256, 256, 256], 'NUM_LAYERS': 50}, 'DETECTOR': {'NAME': 'yolo', 'CONFIG': 'detector/yolo/cfg/yolov3-spp.cfg', 'WEIGHTS': 'detector/yolo/data/yolov3-spp.weights', 'NMS_THRES': 0.6, 'CONFIDENCE': 0.05}, 'TRAIN': {'WORLD_SIZE': 4, 'BATCH_SIZE': 32, 'BEGIN_EPOCH': 0, 'END_EPOCH': 200, 'OPTIMIZER': 'adam', 'LR': 0.001, 'LR_FACTOR': 0.1, 'LR_STEP': [90, 120], 'DPG_MILESTONE': 140, 'DPG_STEP': [20, 50]}, 'FILE_NAME': 'train.yaml'}
+******************************
+Create new model
+=> init weights
+############# Starting Epoch 0 | LR: 0.001 #############
+******************************
+Namespace(board=True, cfg='configs/elephant/train.yaml', debug=False, detector='yolo', device=device(type='cuda', index=0), dist_backend='nccl', dist_url='tcp://192.168.1.214:23345', exp_id='alphapose_12022020', gpus=[0], launcher='none', map=True, nThreads=60, rank=-1, snapshot=2, sync=False, work_dir='./exp/alphapose_12022020-train.yaml/', world_size=4)
+******************************
+{'DATASET': {'TRAIN': {'TYPE': 'Elephant', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'ANN': 'train', 'AUG': {'FLIP': False, 'ROT_FACTOR': 40, 'SCALE_FACTOR': 0.3, 'NUM_JOINTS_HALF_BODY': 8, 'PROB_HALF_BODY': -1}}, 'VAL': {'TYPE': 'Elephant', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'ANN': 'test'}, 'TEST': {'TYPE': 'Elephant', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'DET_FILE': './exp/json/test_det_yolo.json', 'ANN': 'test'}}, 'DATA_PRESET': {'TYPE': 'simple', 'SIGMA': 2, 'NUM_JOINTS': 32, 'IMAGE_SIZE': [256, 192], 'HEATMAP_SIZE': [64, 48]}, 'MODEL': {'TYPE': 'FastPose', 'PRETRAINED': '', 'TRY_LOAD': '', 'NUM_DECONV_FILTERS': [256, 256, 256], 'NUM_LAYERS': 50}, 'DETECTOR': {'NAME': 'yolo', 'CONFIG': 'detector/yolo/cfg/yolov3-spp.cfg', 'WEIGHTS': 'detector/yolo/data/yolov3-spp.weights', 'NMS_THRES': 0.6, 'CONFIDENCE': 0.05}, 'TRAIN': {'WORLD_SIZE': 4, 'BATCH_SIZE': 32, 'BEGIN_EPOCH': 0, 'END_EPOCH': 200, 'OPTIMIZER': 'adam', 'LR': 0.001, 'LR_FACTOR': 0.1, 'LR_STEP': [90, 120], 'DPG_MILESTONE': 140, 'DPG_STEP': [20, 50]}, 'FILE_NAME': 'train.yaml'}
+******************************
+Create new model
+=> init weights
+############# Starting Epoch 0 | LR: 0.001 #############
+******************************
+Namespace(board=True, cfg='configs/elephant/train.yaml', debug=False, detector='yolo', device=device(type='cuda', index=0), dist_backend='nccl', dist_url='tcp://192.168.1.214:23345', exp_id='alphapose_12022020', gpus=[0], launcher='none', map=True, nThreads=60, rank=-1, snapshot=2, sync=False, work_dir='./exp/alphapose_12022020-train.yaml/', world_size=4)
+******************************
+{'DATASET': {'TRAIN': {'TYPE': 'Elephant', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'ANN': 'train', 'AUG': {'FLIP': False, 'ROT_FACTOR': 40, 'SCALE_FACTOR': 0.3, 'NUM_JOINTS_HALF_BODY': 8, 'PROB_HALF_BODY': -1}}, 'VAL': {'TYPE': 'Elephant', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'ANN': 'test'}, 'TEST': {'TYPE': 'Elephant', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'DET_FILE': './exp/json/test_det_yolo.json', 'ANN': 'test'}}, 'DATA_PRESET': {'TYPE': 'simple', 'SIGMA': 2, 'NUM_JOINTS': 32, 'IMAGE_SIZE': [256, 192], 'HEATMAP_SIZE': [64, 48]}, 'MODEL': {'TYPE': 'FastPose', 'PRETRAINED': '', 'TRY_LOAD': '', 'NUM_DECONV_FILTERS': [256, 256, 256], 'NUM_LAYERS': 50}, 'DETECTOR': {'NAME': 'yolo', 'CONFIG': 'detector/yolo/cfg/yolov3-spp.cfg', 'WEIGHTS': 'detector/yolo/data/yolov3-spp.weights', 'NMS_THRES': 0.6, 'CONFIDENCE': 0.05}, 'TRAIN': {'WORLD_SIZE': 4, 'BATCH_SIZE': 32, 'BEGIN_EPOCH': 0, 'END_EPOCH': 200, 'OPTIMIZER': 'adam', 'LR': 0.001, 'LR_FACTOR': 0.1, 'LR_STEP': [90, 120], 'DPG_MILESTONE': 140, 'DPG_STEP': [20, 50]}, 'FILE_NAME': 'train.yaml'}
+******************************
+Create new model
+=> init weights
+############# Starting Epoch 0 | LR: 0.001 #############
+******************************
+Namespace(board=True, cfg='configs/elephant/train.yaml', debug=False, detector='yolo', device=device(type='cuda', index=0), dist_backend='nccl', dist_url='tcp://192.168.1.214:23345', exp_id='alphapose_12022020', gpus=[0], launcher='none', map=True, nThreads=60, rank=-1, snapshot=2, sync=False, work_dir='./exp/alphapose_12022020-train.yaml/', world_size=4)
+******************************
+{'DATASET': {'TRAIN': {'TYPE': 'Elephant', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'ANN': 'train', 'AUG': {'FLIP': False, 'ROT_FACTOR': 40, 'SCALE_FACTOR': 0.3, 'NUM_JOINTS_HALF_BODY': 8, 'PROB_HALF_BODY': -1}}, 'VAL': {'TYPE': 'Elephant', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'ANN': 'test'}, 'TEST': {'TYPE': 'Elephant', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'DET_FILE': './exp/json/test_det_yolo.json', 'ANN': 'test'}}, 'DATA_PRESET': {'TYPE': 'simple', 'SIGMA': 2, 'NUM_JOINTS': 32, 'IMAGE_SIZE': [256, 192], 'HEATMAP_SIZE': [64, 48]}, 'MODEL': {'TYPE': 'FastPose', 'PRETRAINED': '', 'TRY_LOAD': '', 'NUM_DECONV_FILTERS': [256, 256, 256], 'NUM_LAYERS': 50}, 'DETECTOR': {'NAME': 'yolo', 'CONFIG': 'detector/yolo/cfg/yolov3-spp.cfg', 'WEIGHTS': 'detector/yolo/data/yolov3-spp.weights', 'NMS_THRES': 0.6, 'CONFIDENCE': 0.05}, 'TRAIN': {'WORLD_SIZE': 4, 'BATCH_SIZE': 32, 'BEGIN_EPOCH': 0, 'END_EPOCH': 200, 'OPTIMIZER': 'adam', 'LR': 0.001, 'LR_FACTOR': 0.1, 'LR_STEP': [90, 120], 'DPG_MILESTONE': 140, 'DPG_STEP': [20, 50]}, 'FILE_NAME': 'train.yaml'}
+******************************
+Create new model
+=> init weights
+############# Starting Epoch 0 | LR: 0.001 #############
+******************************
+Namespace(board=True, cfg='configs/elephant/train.yaml', debug=False, detector='yolo', device=device(type='cuda', index=0), dist_backend='nccl', dist_url='tcp://192.168.1.214:23345', exp_id='alphapose_12022020', gpus=[0], launcher='none', map=True, nThreads=60, rank=-1, snapshot=2, sync=False, work_dir='./exp/alphapose_12022020-train.yaml/', world_size=4)
+******************************
+{'DATASET': {'TRAIN': {'TYPE': 'Elephant', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'ANN': 'train', 'AUG': {'FLIP': False, 'ROT_FACTOR': 40, 'SCALE_FACTOR': 0.3, 'NUM_JOINTS_HALF_BODY': 8, 'PROB_HALF_BODY': -1}}, 'VAL': {'TYPE': 'Elephant', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'ANN': 'test'}, 'TEST': {'TYPE': 'Elephant', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'DET_FILE': './exp/json/test_det_yolo.json', 'ANN': 'test'}}, 'DATA_PRESET': {'TYPE': 'simple', 'SIGMA': 2, 'NUM_JOINTS': 32, 'IMAGE_SIZE': [256, 192], 'HEATMAP_SIZE': [64, 48]}, 'MODEL': {'TYPE': 'FastPose', 'PRETRAINED': '', 'TRY_LOAD': '', 'NUM_DECONV_FILTERS': [256, 256, 256], 'NUM_LAYERS': 50}, 'DETECTOR': {'NAME': 'yolo', 'CONFIG': 'detector/yolo/cfg/yolov3-spp.cfg', 'WEIGHTS': 'detector/yolo/data/yolov3-spp.weights', 'NMS_THRES': 0.6, 'CONFIDENCE': 0.05}, 'TRAIN': {'WORLD_SIZE': 4, 'BATCH_SIZE': 32, 'BEGIN_EPOCH': 0, 'END_EPOCH': 200, 'OPTIMIZER': 'adam', 'LR': 0.001, 'LR_FACTOR': 0.1, 'LR_STEP': [90, 120], 'DPG_MILESTONE': 140, 'DPG_STEP': [20, 50]}, 'FILE_NAME': 'train.yaml'}
+******************************
+Create new model
+=> init weights
+############# Starting Epoch 0 | LR: 0.001 #############
+******************************
+Namespace(board=True, cfg='configs/elephant/train.yaml', debug=False, detector='yolo', device=device(type='cuda', index=0), dist_backend='nccl', dist_url='tcp://192.168.1.214:23345', exp_id='alphapose_12022020', gpus=[0], launcher='none', map=True, nThreads=60, rank=-1, snapshot=2, sync=False, work_dir='./exp/alphapose_12022020-train.yaml/', world_size=4)
+******************************
+{'DATASET': {'TRAIN': {'TYPE': 'Elephant', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'ANN': 'train', 'AUG': {'FLIP': False, 'ROT_FACTOR': 40, 'SCALE_FACTOR': 0.3, 'NUM_JOINTS_HALF_BODY': 8, 'PROB_HALF_BODY': -1}}, 'VAL': {'TYPE': 'Elephant', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'ANN': 'test'}, 'TEST': {'TYPE': 'Elephant', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'DET_FILE': './exp/json/test_det_yolo.json', 'ANN': 'test'}}, 'DATA_PRESET': {'TYPE': 'simple', 'SIGMA': 2, 'NUM_JOINTS': 32, 'IMAGE_SIZE': [256, 192], 'HEATMAP_SIZE': [64, 48]}, 'MODEL': {'TYPE': 'FastPose', 'PRETRAINED': '', 'TRY_LOAD': '', 'NUM_DECONV_FILTERS': [256, 256, 256], 'NUM_LAYERS': 50}, 'DETECTOR': {'NAME': 'yolo', 'CONFIG': 'detector/yolo/cfg/yolov3-spp.cfg', 'WEIGHTS': 'detector/yolo/data/yolov3-spp.weights', 'NMS_THRES': 0.6, 'CONFIDENCE': 0.05}, 'TRAIN': {'WORLD_SIZE': 4, 'BATCH_SIZE': 32, 'BEGIN_EPOCH': 0, 'END_EPOCH': 200, 'OPTIMIZER': 'adam', 'LR': 0.001, 'LR_FACTOR': 0.1, 'LR_STEP': [90, 120], 'DPG_MILESTONE': 140, 'DPG_STEP': [20, 50]}, 'FILE_NAME': 'train.yaml'}
+******************************
+Create new model
+=> init weights
+############# Starting Epoch 0 | LR: 0.001 #############
+Train-0 epoch | loss:0.00180490 | acc:0.0075
+############# Starting Epoch 1 | LR: 0.001 #############
+Train-1 epoch | loss:0.00096077 | acc:0.0231
+******************************
+Namespace(board=True, cfg='configs/elephant/train.yaml', debug=False, detector='yolo', device=device(type='cuda', index=0), dist_backend='nccl', dist_url='tcp://192.168.1.214:23345', exp_id='alphapose_12022020', gpus=[0], launcher='none', map=True, nThreads=60, rank=-1, snapshot=2, sync=False, work_dir='./exp/alphapose_12022020-train.yaml/', world_size=4)
+******************************
+{'DATASET': {'TRAIN': {'TYPE': 'Elephant', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'ANN': 'train', 'AUG': {'FLIP': False, 'ROT_FACTOR': 40, 'SCALE_FACTOR': 0.3, 'NUM_JOINTS_HALF_BODY': 8, 'PROB_HALF_BODY': -1}}, 'VAL': {'TYPE': 'Elephant', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'ANN': 'test'}, 'TEST': {'TYPE': 'Elephant', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'DET_FILE': './exp/json/test_det_yolo.json', 'ANN': 'test'}}, 'DATA_PRESET': {'TYPE': 'simple', 'SIGMA': 2, 'NUM_JOINTS': 32, 'IMAGE_SIZE': [256, 192], 'HEATMAP_SIZE': [64, 48]}, 'MODEL': {'TYPE': 'FastPose', 'PRETRAINED': '', 'TRY_LOAD': '', 'NUM_DECONV_FILTERS': [256, 256, 256], 'NUM_LAYERS': 50}, 'DETECTOR': {'NAME': 'yolo', 'CONFIG': 'detector/yolo/cfg/yolov3-spp.cfg', 'WEIGHTS': 'detector/yolo/data/yolov3-spp.weights', 'NMS_THRES': 0.6, 'CONFIDENCE': 0.05}, 'TRAIN': {'WORLD_SIZE': 4, 'BATCH_SIZE': 32, 'BEGIN_EPOCH': 0, 'END_EPOCH': 200, 'OPTIMIZER': 'adam', 'LR': 0.001, 'LR_FACTOR': 0.1, 'LR_STEP': [90, 120], 'DPG_MILESTONE': 140, 'DPG_STEP': [20, 50]}, 'FILE_NAME': 'train.yaml'}
+******************************
+Create new model
+=> init weights
+############# Starting Epoch 0 | LR: 0.001 #############
+Train-0 epoch | loss:0.00204291 | acc:0.0031
+############# Starting Epoch 1 | LR: 0.001 #############
+Train-1 epoch | loss:0.00094700 | acc:0.0167
+******************************
+Namespace(board=True, cfg='configs/elephant/train.yaml', debug=False, detector='yolo', device=device(type='cuda', index=0), dist_backend='nccl', dist_url='tcp://192.168.1.214:23345', exp_id='alphapose_12022020', gpus=[0], launcher='none', map=True, nThreads=60, rank=-1, snapshot=2, sync=False, work_dir='./exp/alphapose_12022020-train.yaml/', world_size=4)
+******************************
+{'DATASET': {'TRAIN': {'TYPE': 'Elephant', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'ANN': 'train', 'AUG': {'FLIP': False, 'ROT_FACTOR': 40, 'SCALE_FACTOR': 0.3, 'NUM_JOINTS_HALF_BODY': 8, 'PROB_HALF_BODY': -1}}, 'VAL': {'TYPE': 'Elephant', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'ANN': 'test'}, 'TEST': {'TYPE': 'Elephant', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'DET_FILE': './exp/json/test_det_yolo.json', 'ANN': 'test'}}, 'DATA_PRESET': {'TYPE': 'simple', 'SIGMA': 2, 'NUM_JOINTS': 32, 'IMAGE_SIZE': [256, 192], 'HEATMAP_SIZE': [64, 48]}, 'MODEL': {'TYPE': 'FastPose', 'PRETRAINED': '', 'TRY_LOAD': '', 'NUM_DECONV_FILTERS': [256, 256, 256], 'NUM_LAYERS': 50}, 'DETECTOR': {'NAME': 'yolo', 'CONFIG': 'detector/yolo/cfg/yolov3-spp.cfg', 'WEIGHTS': 'detector/yolo/data/yolov3-spp.weights', 'NMS_THRES': 0.6, 'CONFIDENCE': 0.05}, 'TRAIN': {'WORLD_SIZE': 4, 'BATCH_SIZE': 32, 'BEGIN_EPOCH': 0, 'END_EPOCH': 200, 'OPTIMIZER': 'adam', 'LR': 0.001, 'LR_FACTOR': 0.1, 'LR_STEP': [90, 120], 'DPG_MILESTONE': 140, 'DPG_STEP': [20, 50]}, 'FILE_NAME': 'train.yaml'}
+******************************
+Create new model
+=> init weights
+############# Starting Epoch 0 | LR: 0.001 #############
+Train-0 epoch | loss:0.00179860 | acc:0.0063
+############# Starting Epoch 1 | LR: 0.001 #############
+Train-1 epoch | loss:0.00096559 | acc:0.0170
+******************************
+Namespace(board=True, cfg='configs/elephant/train.yaml', debug=False, detector='yolo', device=device(type='cuda', index=0), dist_backend='nccl', dist_url='tcp://192.168.1.214:23345', exp_id='alphapose_12022020', gpus=[0], launcher='none', map=True, nThreads=60, rank=-1, snapshot=2, sync=False, work_dir='./exp/alphapose_12022020-train.yaml/', world_size=4)
+******************************
+{'DATASET': {'TRAIN': {'TYPE': 'Elephant', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'ANN': 'train', 'AUG': {'FLIP': False, 'ROT_FACTOR': 40, 'SCALE_FACTOR': 0.3, 'NUM_JOINTS_HALF_BODY': 8, 'PROB_HALF_BODY': -1}}, 'VAL': {'TYPE': 'Elephant', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'ANN': 'test'}, 'TEST': {'TYPE': 'Elephant', 'ROOT': '/mnt/elephantreiddiag/elephantdb/alphaPose/', 'IMG_PREFIX': 'elephant_images', 'DET_FILE': './exp/json/test_det_yolo.json', 'ANN': 'test'}}, 'DATA_PRESET': {'TYPE': 'simple', 'SIGMA': 2, 'NUM_JOINTS': 32, 'IMAGE_SIZE': [256, 192], 'HEATMAP_SIZE': [64, 48]}, 'MODEL': {'TYPE': 'FastPose', 'PRETRAINED': '', 'TRY_LOAD': '', 'NUM_DECONV_FILTERS': [256, 256, 256], 'NUM_LAYERS': 50}, 'DETECTOR': {'NAME': 'yolo', 'CONFIG': 'detector/yolo/cfg/yolov3-spp.cfg', 'WEIGHTS': 'detector/yolo/data/yolov3-spp.weights', 'NMS_THRES': 0.6, 'CONFIDENCE': 0.05}, 'TRAIN': {'WORLD_SIZE': 4, 'BATCH_SIZE': 32, 'BEGIN_EPOCH': 0, 'END_EPOCH': 200, 'OPTIMIZER': 'adam', 'LR': 0.001, 'LR_FACTOR': 0.1, 'LR_STEP': [90, 120], 'DPG_MILESTONE': 140, 'DPG_STEP': [20, 50]}, 'FILE_NAME': 'train.yaml'}
+******************************
+Create new model
+=> init weights
+############# Starting Epoch 0 | LR: 0.001 #############
+Train-0 epoch | loss:0.00205312 | acc:0.0018
+############# Starting Epoch 1 | LR: 0.001 #############
+Train-1 epoch | loss:0.00097612 | acc:0.0122
+############# Starting Epoch 2 | LR: 0.001 #############
+Train-2 epoch | loss:0.00094314 | acc:0.0189
+############# Starting Epoch 3 | LR: 0.001 #############
+Train-3 epoch | loss:0.00093933 | acc:0.0235
+############# Starting Epoch 4 | LR: 0.001 #############
+Train-4 epoch | loss:0.00093771 | acc:0.0261
+############# Starting Epoch 5 | LR: 0.001 #############
+Train-5 epoch | loss:0.00093398 | acc:0.0287
+############# Starting Epoch 6 | LR: 0.001 #############
+Train-6 epoch | loss:0.00092446 | acc:0.0473
+############# Starting Epoch 7 | LR: 0.001 #############
+Train-7 epoch | loss:0.00091129 | acc:0.0675
+############# Starting Epoch 8 | LR: 0.001 #############
+Train-8 epoch | loss:0.00089629 | acc:0.0777
+############# Starting Epoch 9 | LR: 0.001 #############
+Train-9 epoch | loss:0.00088849 | acc:0.0956
+############# Starting Epoch 10 | LR: 0.001 #############
+Train-10 epoch | loss:0.00087964 | acc:0.1028
+############# Starting Epoch 11 | LR: 0.001 #############
+Train-11 epoch | loss:0.00086898 | acc:0.1259
+############# Starting Epoch 12 | LR: 0.001 #############
+Train-12 epoch | loss:0.00085986 | acc:0.1336
+############# Starting Epoch 13 | LR: 0.001 #############
+Train-13 epoch | loss:0.00084982 | acc:0.1548
+############# Starting Epoch 14 | LR: 0.001 #############
+Train-14 epoch | loss:0.00083732 | acc:0.1710
+############# Starting Epoch 15 | LR: 0.001 #############
+Train-15 epoch | loss:0.00082474 | acc:0.2023
+############# Starting Epoch 16 | LR: 0.001 #############
+Train-16 epoch | loss:0.00080029 | acc:0.2417
+############# Starting Epoch 17 | LR: 0.001 #############
+Train-17 epoch | loss:0.00077301 | acc:0.2931
+############# Starting Epoch 18 | LR: 0.001 #############
+Train-18 epoch | loss:0.00075090 | acc:0.3181
+############# Starting Epoch 19 | LR: 0.001 #############
+Train-19 epoch | loss:0.00072599 | acc:0.3591
+############# Starting Epoch 20 | LR: 0.001 #############
+Train-20 epoch | loss:0.00069704 | acc:0.3834
+############# Starting Epoch 21 | LR: 0.001 #############
+Train-21 epoch | loss:0.00067697 | acc:0.4135
+############# Starting Epoch 22 | LR: 0.001 #############
+Train-22 epoch | loss:0.00064459 | acc:0.4523
+############# Starting Epoch 23 | LR: 0.001 #############
+Train-23 epoch | loss:0.00062965 | acc:0.4586
+############# Starting Epoch 24 | LR: 0.001 #############
+Train-24 epoch | loss:0.00061127 | acc:0.4926
+############# Starting Epoch 25 | LR: 0.001 #############
+Train-25 epoch | loss:0.00059293 | acc:0.5032
+############# Starting Epoch 26 | LR: 0.001 #############
+Train-26 epoch | loss:0.00057128 | acc:0.5295
+############# Starting Epoch 27 | LR: 0.001 #############
+Train-27 epoch | loss:0.00055888 | acc:0.5382
+############# Starting Epoch 28 | LR: 0.001 #############
+Train-28 epoch | loss:0.00054974 | acc:0.5492
+############# Starting Epoch 29 | LR: 0.001 #############
+Train-29 epoch | loss:0.00054089 | acc:0.5709
+############# Starting Epoch 30 | LR: 0.001 #############
+Train-30 epoch | loss:0.00053459 | acc:0.5700
+############# Starting Epoch 31 | LR: 0.001 #############
+Train-31 epoch | loss:0.00052288 | acc:0.5803
+############# Starting Epoch 32 | LR: 0.001 #############
+Train-32 epoch | loss:0.00051040 | acc:0.5993
+############# Starting Epoch 33 | LR: 0.001 #############
+Train-33 epoch | loss:0.00050972 | acc:0.5959
+############# Starting Epoch 34 | LR: 0.001 #############
+Train-34 epoch | loss:0.00049330 | acc:0.6075
+############# Starting Epoch 35 | LR: 0.001 #############
+Train-35 epoch | loss:0.00048497 | acc:0.6248
+############# Starting Epoch 36 | LR: 0.001 #############
+Train-36 epoch | loss:0.00047865 | acc:0.6288
+############# Starting Epoch 37 | LR: 0.001 #############
+Train-37 epoch | loss:0.00047339 | acc:0.6315
+############# Starting Epoch 38 | LR: 0.001 #############
+Train-38 epoch | loss:0.00047430 | acc:0.6335
+############# Starting Epoch 39 | LR: 0.001 #############
+Train-39 epoch | loss:0.00046396 | acc:0.6441
+############# Starting Epoch 40 | LR: 0.001 #############
+Train-40 epoch | loss:0.00045621 | acc:0.6494
+############# Starting Epoch 41 | LR: 0.001 #############
+Train-41 epoch | loss:0.00045388 | acc:0.6497
+############# Starting Epoch 42 | LR: 0.001 #############
+Train-42 epoch | loss:0.00045133 | acc:0.6571
+############# Starting Epoch 43 | LR: 0.001 #############
+Train-43 epoch | loss:0.00044235 | acc:0.6576
+############# Starting Epoch 44 | LR: 0.001 #############
+Train-44 epoch | loss:0.00043738 | acc:0.6717
+############# Starting Epoch 45 | LR: 0.001 #############
+Train-45 epoch | loss:0.00044076 | acc:0.6691
+############# Starting Epoch 46 | LR: 0.001 #############
+Train-46 epoch | loss:0.00043667 | acc:0.6722
+############# Starting Epoch 47 | LR: 0.001 #############
+Train-47 epoch | loss:0.00044153 | acc:0.6697
+############# Starting Epoch 48 | LR: 0.001 #############
+Train-48 epoch | loss:0.00042555 | acc:0.6887
+############# Starting Epoch 49 | LR: 0.001 #############
+Train-49 epoch | loss:0.00042221 | acc:0.6841
+############# Starting Epoch 50 | LR: 0.001 #############
+Train-50 epoch | loss:0.00041686 | acc:0.6862
+############# Starting Epoch 51 | LR: 0.001 #############
+Train-51 epoch | loss:0.00041320 | acc:0.6939
+############# Starting Epoch 52 | LR: 0.001 #############
+Train-52 epoch | loss:0.00040859 | acc:0.6941
+############# Starting Epoch 53 | LR: 0.001 #############
+Train-53 epoch | loss:0.00041027 | acc:0.7026
+############# Starting Epoch 54 | LR: 0.001 #############
+Train-54 epoch | loss:0.00040793 | acc:0.7041
+############# Starting Epoch 55 | LR: 0.001 #############
+Train-55 epoch | loss:0.00039753 | acc:0.7108
+############# Starting Epoch 56 | LR: 0.001 #############
+Train-56 epoch | loss:0.00039726 | acc:0.7102
+############# Starting Epoch 57 | LR: 0.001 #############
+Train-57 epoch | loss:0.00040097 | acc:0.7107
+############# Starting Epoch 58 | LR: 0.001 #############
+Train-58 epoch | loss:0.00039130 | acc:0.7272
+############# Starting Epoch 59 | LR: 0.001 #############
+Train-59 epoch | loss:0.00038996 | acc:0.7197
+############# Starting Epoch 60 | LR: 0.001 #############
+Train-60 epoch | loss:0.00038758 | acc:0.7228
+############# Starting Epoch 61 | LR: 0.001 #############
+Train-61 epoch | loss:0.00038205 | acc:0.7418
+############# Starting Epoch 62 | LR: 0.001 #############
+Train-62 epoch | loss:0.00037803 | acc:0.7346
+############# Starting Epoch 63 | LR: 0.001 #############
+Train-63 epoch | loss:0.00038057 | acc:0.7363
+############# Starting Epoch 64 | LR: 0.001 #############
+Train-64 epoch | loss:0.00037575 | acc:0.7396
+############# Starting Epoch 65 | LR: 0.001 #############
+Train-65 epoch | loss:0.00037311 | acc:0.7506
+############# Starting Epoch 66 | LR: 0.001 #############
+Train-66 epoch | loss:0.00037212 | acc:0.7517
+############# Starting Epoch 67 | LR: 0.001 #############
+Train-67 epoch | loss:0.00037057 | acc:0.7436
+############# Starting Epoch 68 | LR: 0.001 #############
+Train-68 epoch | loss:0.00035820 | acc:0.7566
+############# Starting Epoch 69 | LR: 0.001 #############
+Train-69 epoch | loss:0.00036051 | acc:0.7610
+############# Starting Epoch 70 | LR: 0.001 #############
+Train-70 epoch | loss:0.00036420 | acc:0.7590
+############# Starting Epoch 71 | LR: 0.001 #############
+Train-71 epoch | loss:0.00036108 | acc:0.7646
+############# Starting Epoch 72 | LR: 0.001 #############
+Train-72 epoch | loss:0.00035577 | acc:0.7648
+############# Starting Epoch 73 | LR: 0.001 #############
+Train-73 epoch | loss:0.00035029 | acc:0.7766
+############# Starting Epoch 74 | LR: 0.001 #############
+Train-74 epoch | loss:0.00034459 | acc:0.7768
+############# Starting Epoch 75 | LR: 0.001 #############
+Train-75 epoch | loss:0.00033871 | acc:0.7810
+############# Starting Epoch 76 | LR: 0.001 #############
+Train-76 epoch | loss:0.00033986 | acc:0.7800
+############# Starting Epoch 77 | LR: 0.001 #############
+Train-77 epoch | loss:0.00033563 | acc:0.7865
+############# Starting Epoch 78 | LR: 0.001 #############
+Train-78 epoch | loss:0.00033376 | acc:0.7893
+############# Starting Epoch 79 | LR: 0.001 #############
+Train-79 epoch | loss:0.00032609 | acc:0.7920
+############# Starting Epoch 80 | LR: 0.001 #############
+Train-80 epoch | loss:0.00032182 | acc:0.7959
+############# Starting Epoch 81 | LR: 0.001 #############
+Train-81 epoch | loss:0.00032584 | acc:0.7927
+############# Starting Epoch 82 | LR: 0.001 #############
+Train-82 epoch | loss:0.00031854 | acc:0.8057
+############# Starting Epoch 83 | LR: 0.001 #############
+Train-83 epoch | loss:0.00031786 | acc:0.8088
+############# Starting Epoch 84 | LR: 0.001 #############
+Train-84 epoch | loss:0.00031317 | acc:0.8103
+############# Starting Epoch 85 | LR: 0.001 #############
+Train-85 epoch | loss:0.00031302 | acc:0.8091
+############# Starting Epoch 86 | LR: 0.001 #############
+Train-86 epoch | loss:0.00030876 | acc:0.8114
+############# Starting Epoch 87 | LR: 0.001 #############
+Train-87 epoch | loss:0.00030934 | acc:0.8170
+############# Starting Epoch 88 | LR: 0.001 #############
+Train-88 epoch | loss:0.00031882 | acc:0.8088
+############# Starting Epoch 89 | LR: 0.001 #############
+Train-89 epoch | loss:0.00030364 | acc:0.8190
+############# Starting Epoch 90 | LR: 0.0001 #############
+Train-90 epoch | loss:0.00028956 | acc:0.8251
+############# Starting Epoch 91 | LR: 0.0001 #############
+Train-91 epoch | loss:0.00027074 | acc:0.8351
+############# Starting Epoch 92 | LR: 0.0001 #############
+Train-92 epoch | loss:0.00025991 | acc:0.8448
+############# Starting Epoch 93 | LR: 0.0001 #############
+Train-93 epoch | loss:0.00025579 | acc:0.8504
+############# Starting Epoch 94 | LR: 0.0001 #############
+Train-94 epoch | loss:0.00025474 | acc:0.8524
+############# Starting Epoch 95 | LR: 0.0001 #############
+Train-95 epoch | loss:0.00024583 | acc:0.8585
+############# Starting Epoch 96 | LR: 0.0001 #############
+Train-96 epoch | loss:0.00024932 | acc:0.8504
+############# Starting Epoch 97 | LR: 0.0001 #############
+Train-97 epoch | loss:0.00024780 | acc:0.8575
+############# Starting Epoch 98 | LR: 0.0001 #############
+Train-98 epoch | loss:0.00024357 | acc:0.8539
+############# Starting Epoch 99 | LR: 0.0001 #############
+Train-99 epoch | loss:0.00023443 | acc:0.8660
+############# Starting Epoch 100 | LR: 0.0001 #############
+Train-100 epoch | loss:0.00023313 | acc:0.8704
+############# Starting Epoch 101 | LR: 0.0001 #############
+Train-101 epoch | loss:0.00023661 | acc:0.8627
+############# Starting Epoch 102 | LR: 0.0001 #############
+Train-102 epoch | loss:0.00023902 | acc:0.8628
+############# Starting Epoch 103 | LR: 0.0001 #############
+Train-103 epoch | loss:0.00023365 | acc:0.8652
+############# Starting Epoch 104 | LR: 0.0001 #############
+Train-104 epoch | loss:0.00022896 | acc:0.8668
+############# Starting Epoch 105 | LR: 0.0001 #############
+Train-105 epoch | loss:0.00023178 | acc:0.8708
+############# Starting Epoch 106 | LR: 0.0001 #############
+Train-106 epoch | loss:0.00023013 | acc:0.8694
+############# Starting Epoch 107 | LR: 0.0001 #############
+Train-107 epoch | loss:0.00023233 | acc:0.8656
+############# Starting Epoch 108 | LR: 0.0001 #############
+Train-108 epoch | loss:0.00022449 | acc:0.8743
+############# Starting Epoch 109 | LR: 0.0001 #############
+Train-109 epoch | loss:0.00023104 | acc:0.8695
+############# Starting Epoch 110 | LR: 0.0001 #############
+Train-110 epoch | loss:0.00022484 | acc:0.8748
+############# Starting Epoch 111 | LR: 0.0001 #############
+Train-111 epoch | loss:0.00022491 | acc:0.8747
+############# Starting Epoch 112 | LR: 0.0001 #############
+Train-112 epoch | loss:0.00022313 | acc:0.8778
+############# Starting Epoch 113 | LR: 0.0001 #############
+Train-113 epoch | loss:0.00022308 | acc:0.8740
+############# Starting Epoch 114 | LR: 0.0001 #############
+Train-114 epoch | loss:0.00021538 | acc:0.8804
+############# Starting Epoch 115 | LR: 0.0001 #############
+Train-115 epoch | loss:0.00021307 | acc:0.8855
+############# Starting Epoch 116 | LR: 0.0001 #############
+Train-116 epoch | loss:0.00021821 | acc:0.8801
+############# Starting Epoch 117 | LR: 0.0001 #############
+Train-117 epoch | loss:0.00021115 | acc:0.8820
+############# Starting Epoch 118 | LR: 0.0001 #############
+Train-118 epoch | loss:0.00021030 | acc:0.8837
+############# Starting Epoch 119 | LR: 0.0001 #############
+Train-119 epoch | loss:0.00021610 | acc:0.8811
+############# Starting Epoch 120 | LR: 1e-05 #############
+Train-120 epoch | loss:0.00020700 | acc:0.8895
+############# Starting Epoch 121 | LR: 1e-05 #############
+Train-121 epoch | loss:0.00021296 | acc:0.8879
+############# Starting Epoch 122 | LR: 1e-05 #############
+Train-122 epoch | loss:0.00020632 | acc:0.8892
+############# Starting Epoch 123 | LR: 1e-05 #############
+Train-123 epoch | loss:0.00020405 | acc:0.8914
+############# Starting Epoch 124 | LR: 1e-05 #############
+Train-124 epoch | loss:0.00020646 | acc:0.8903
+############# Starting Epoch 125 | LR: 1e-05 #############
+Train-125 epoch | loss:0.00020923 | acc:0.8861
+############# Starting Epoch 126 | LR: 1e-05 #############
+Train-126 epoch | loss:0.00020942 | acc:0.8842
+############# Starting Epoch 127 | LR: 1e-05 #############
+Train-127 epoch | loss:0.00021103 | acc:0.8830
+############# Starting Epoch 128 | LR: 1e-05 #############
+Train-128 epoch | loss:0.00020401 | acc:0.8913
+############# Starting Epoch 129 | LR: 1e-05 #############
+Train-129 epoch | loss:0.00020683 | acc:0.8840
+############# Starting Epoch 130 | LR: 1e-05 #############
+Train-130 epoch | loss:0.00020754 | acc:0.8913
+############# Starting Epoch 131 | LR: 1e-05 #############
+Train-131 epoch | loss:0.00020215 | acc:0.8907
+############# Starting Epoch 132 | LR: 1e-05 #############
+Train-132 epoch | loss:0.00021200 | acc:0.8850
+############# Starting Epoch 133 | LR: 1e-05 #############
+Train-133 epoch | loss:0.00020802 | acc:0.8861
+############# Starting Epoch 134 | LR: 1e-05 #############
+Train-134 epoch | loss:0.00020951 | acc:0.8898
+############# Starting Epoch 135 | LR: 1e-05 #############
+Train-135 epoch | loss:0.00020530 | acc:0.8883
+############# Starting Epoch 136 | LR: 1e-05 #############
+Train-136 epoch | loss:0.00020767 | acc:0.8850
+############# Starting Epoch 137 | LR: 1e-05 #############
+Train-137 epoch | loss:0.00020887 | acc:0.8884
+############# Starting Epoch 138 | LR: 1e-05 #############
+Train-138 epoch | loss:0.00020526 | acc:0.8876
+############# Starting Epoch 139 | LR: 1e-05 #############
+Train-139 epoch | loss:0.00020155 | acc:0.8919
+############# Starting Epoch 140 | LR: 1e-05 #############
+Train-140 epoch | loss:0.00020680 | acc:0.8919
+############# Starting Epoch 141 | LR: 0.001 #############
+Train-141 epoch | loss:0.00043199 | acc:0.7213
+############# Starting Epoch 142 | LR: 0.001 #############
+Train-142 epoch | loss:0.00056449 | acc:0.5443
+############# Starting Epoch 143 | LR: 0.001 #############
+Train-143 epoch | loss:0.00049106 | acc:0.6223
+############# Starting Epoch 144 | LR: 0.001 #############
+Train-144 epoch | loss:0.00044368 | acc:0.6702
+############# Starting Epoch 145 | LR: 0.001 #############
+Train-145 epoch | loss:0.00042355 | acc:0.6875
+############# Starting Epoch 146 | LR: 0.001 #############
+Train-146 epoch | loss:0.00041107 | acc:0.7009
+############# Starting Epoch 147 | LR: 0.001 #############
+Train-147 epoch | loss:0.00039293 | acc:0.7200
+############# Starting Epoch 148 | LR: 0.001 #############
+Train-148 epoch | loss:0.00038963 | acc:0.7231
+############# Starting Epoch 149 | LR: 0.001 #############
+Train-149 epoch | loss:0.00037402 | acc:0.7333
+############# Starting Epoch 150 | LR: 0.001 #############
+Train-150 epoch | loss:0.00036297 | acc:0.7461
+############# Starting Epoch 151 | LR: 0.001 #############
+Train-151 epoch | loss:0.00036003 | acc:0.7494
+############# Starting Epoch 152 | LR: 0.001 #############
+Train-152 epoch | loss:0.00035481 | acc:0.7639
+############# Starting Epoch 153 | LR: 0.001 #############
+Train-153 epoch | loss:0.00035163 | acc:0.7612
+############# Starting Epoch 154 | LR: 0.001 #############
+Train-154 epoch | loss:0.00035010 | acc:0.7641
+############# Starting Epoch 155 | LR: 0.001 #############
+Train-155 epoch | loss:0.00034450 | acc:0.7720
+############# Starting Epoch 156 | LR: 0.001 #############
+Train-156 epoch | loss:0.00034204 | acc:0.7744
+############# Starting Epoch 157 | LR: 0.001 #############

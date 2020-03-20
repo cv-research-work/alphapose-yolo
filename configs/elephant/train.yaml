@@ -1,0 +1,63 @@
+DATASET:
+  TRAIN:
+    TYPE: 'Elephant'
+    ROOT: ''
+    IMG_PREFIX: 'elephant_images'
+    ANN: 'train'
+    AUG:
+      FLIP: False
+      ROT_FACTOR: 40
+      SCALE_FACTOR: 0.3
+      NUM_JOINTS_HALF_BODY: 8
+      PROB_HALF_BODY: -1
+  VAL:
+    TYPE: 'Elephant'
+    ROOT: ''
+    IMG_PREFIX: 'test_images'
+    ANN: 'test'
+  TEST:
+    TYPE: 'Elephant'
+    ROOT: ''
+    IMG_PREFIX: ''
+    DET_FILE: './exp/json/test_det_yolo.json'
+    ANN: 'test'
+DATA_PRESET:
+  TYPE: 'simple'
+  SIGMA: 2
+  NUM_JOINTS: 20
+  IMAGE_SIZE:
+  - 256
+  - 192
+  HEATMAP_SIZE:
+  - 64
+  - 48
+MODEL:
+  TYPE: 'FastPose'
+  PRETRAINED: ''
+  TRY_LOAD: ''
+  NUM_DECONV_FILTERS:
+  - 256
+  - 256
+  - 256
+  NUM_LAYERS: 50
+DETECTOR:
+  NAME: 'yolo'
+  CONFIG: 'detector/yolo/cfg/yolov3-spp.cfg'
+  WEIGHTS: 'detector/yolo/data/yolov3-spp.weights'
+  NMS_THRES: 0.6
+  CONFIDENCE: 0.05
+TRAIN:
+  WORLD_SIZE: 4
+  BATCH_SIZE: 32
+  BEGIN_EPOCH: 0
+  END_EPOCH: 200
+  OPTIMIZER: 'adam'
+  LR: 0.001
+  LR_FACTOR: 0.1
+  LR_STEP:
+  - 90
+  - 120
+  DPG_MILESTONE: 140
+  DPG_STEP:
+  - 160
+  - 190
